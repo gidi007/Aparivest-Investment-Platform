@@ -1,0 +1,98 @@
+/* Ensure the page fills the entire viewport */
+.user-profile-page {
+  background-color: #f4f4f4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+}
+
+/* Main content styling */
+.user-profile-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;  /* Ensure the container spans the full width */
+  padding: 15px; /* Add padding for small screens */
+  box-sizing: border-box;
+}
+
+/* Profile container styling */
+.user-profile-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;  /* Responsive width */
+  max-width: 500px;  /* Prevents it from being too wide */
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+/* Profile information styling */
+.profile-info p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+/* Button styles */
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  width: 100%;  /* Full width for buttons */
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+/* Save and cancel buttons styling */
+.save-button {
+  background-color: #4caf50;
+}
+
+.save-button:hover {
+  background-color: #388e3c;
+}
+
+.cancel-button {
+  background-color: #f44336;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Form styling */
+.profile-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .user-profile-container {
+    padding: 20px;
+    max-width: 90%;  /* Make the container smaller on small screens */
+  }
+}
